@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
-CSRF_TRUSTED_ORIGINS = ['*', 'https://*.railway.app', 'https://*.127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://*.railway.app', 'https://*.127.0.0.1']
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -64,7 +64,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 STATIC_URL = 'staticfiles/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "staticfiles")
+    os.path.join(BASE_DIR, "static")
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
