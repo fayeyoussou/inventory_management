@@ -50,6 +50,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+CSRF_TRUSTED_ORIGINS = ['https://*.https://inventorymanagement-production-619e.up.railway.app','https://*.127.0.0.1']
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
